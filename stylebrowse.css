@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.profile p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #b3b3b3;
+}
+
+.profile:hover img {
+  border-color: white;
+  transform: scale(1.08);
+}
+
+.profile:hover p {
+  color: white;
+}

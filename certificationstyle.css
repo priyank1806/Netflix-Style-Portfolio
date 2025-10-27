@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  background-color: #0d0d0f;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+header h1 {
+  color: #ff3b3b;
+  margin-bottom: 5px;
+  font-size: 32px;
+}
+
+header p {
+  color: #bbb;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.cert-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  width: 90%;
+  margin: 40px auto 80px;
+}
+
+.cert-card {
+  background-color: #151517;
+  border-radius: 14px;
+  padding: 25px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #1f1f1f;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(255, 59, 59, 0.25);
+}
+
+.cert-icon {
+  font-size: 32px;
+  color: #00aaff;
+  margin-bottom: 10px;
+}
+
+.cert-card h3 {
+  margin: 8px 0;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.cert-card p {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.cert-card a {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #ff3b3b;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.cert-card a:hover {
+  color: #ff6666;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cert-container {
+    grid-template-columns: 1fr;
+  }
+  header h1 {
+    font-size: 26px;
+  }
+}
